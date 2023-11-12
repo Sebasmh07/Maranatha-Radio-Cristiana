@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    text-align: center;
+    background-color: #686666;
+    color: white;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav {
+    background-color: #ff6600;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    position: relative;
+    transition: color 0.3s;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 245, 20);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Estilos específicos para el reproductor de audio y galería de fotos */
+.reproductor {
+    background-color: #4e4d4d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-volume-slider {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-item {
+    flex: 1 0 calc(33.333% - 20px); /* Esto divide la galería en 3 columnas */
+    max-width: calc(33.333% - 20px); /* Ancho máximo de cada imagen */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Hace que la imagen se agrande al pasar el mouse sobre ella */
+}
+
+/* Estilos para el botón de descarga de la app */
+.descargar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.descargar-btn:hover {
+    background-color: royalblue;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #525252;
+    color: white;
+    padding: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+/* Estilos de botón */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para cada red social */
+.facebook {
+    background-color: #1877f2;
+}
+
+.tiktok {
+    background-color: #000;
+}
+
+.instagram {
+    background-color: #bc2a8d;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+/* Animaciones */
+a:hover {
+    transform: scale(1.1); /* Hacer que los botones se agranden al pasar el mouse */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #464545;
+    color: #fffcfc;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section h2 {
+    color: #ac3737;
+}
+
+section h1 {
+    color: #ac3737;
+}
+
+.locutor {
+    text-align: center;
+    margin: 20px;
+}
+
+.locutor img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #494949;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkkhaki;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la sección de suscripción */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: royalblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: darkkhaki;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+.comentarios {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px royalblue
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#lista-comentarios {
+    margin-top: 20px;
+}
+
+.enlace-emisora {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.enlace-emisora:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
